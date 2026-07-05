@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Portfolio — Atrangi Comedy</title>
+<meta name="description" content="Sample work from Atrangi Comedy — thumbnails, branding, videos, website and AI art.">
+
+<link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16.png">
+<link rel="apple-touch-icon" sizes="180x180" href="assets/favicon-180.png">
+<link rel="icon" type="image/png" sizes="192x192" href="assets/favicon-192.png">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<link rel="stylesheet" href="css/styles.css">
+<style>
+  .placeholder-card{ width:100%; height:100%; display:flex; flex-direction:column; align-items:center; justify-content:center; text-align:center; gap:.6rem; padding:1.2rem; background:linear-gradient(135deg,var(--purple),var(--pink)); }
+  .placeholder-card i{ font-size:2rem; }
+  .placeholder-card span{ font-weight:600; font-size:.85rem; }
+</style>
+</head>
+<body>
+
+<nav class="site-nav">
+  <div class="nav-inner">
+    <a class="brand" href="index.html">
+      <img src="assets/logo.png" alt="Atrangi Comedy logo">
+      <span>Atrangi Comedy<span class="small">Haste Raho Muskurate Raho</span></span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="videos.html">Videos</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="portfolio.html" class="active">Portfolio</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <div class="nav-social">
+      <a class="yt" href="https://www.youtube.com/@Atrangi-Comedy_1" target="_blank" rel="noopener" aria-label="YouTube channel"><i class="fa-brands fa-youtube"></i></a>
+      <a class="ig" href="https://www.instagram.com/atrangi_comedy_1" target="_blank" rel="noopener" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">&#9776;</button>
+    </div>
+  </div>
+</nav>
+
+<div class="page-hero">
+  <div class="container">
+    <span class="eyebrow">🎨 Our Work</span>
+    <h1>Portfolio &amp; <span class="gradient-text">Sample Work</span></h1>
+    <p>Channel content se lekar client work tak — ek jhalak hamare kaam ki.</p>
+  </div>
+</div>
+
+<section>
+  <div class="container">
+    <div class="tab-bar">
+      <button class="tab-btn active" data-cat="all">All</button>
+      <button class="tab-btn" data-cat="video">Video Thumbnails</button>
+      <button class="tab-btn" data-cat="brand">Branding &amp; Logo</button>
+      <button class="tab-btn" data-cat="website">Website Design</button>
+      <button class="tab-btn" data-cat="ai-art">AI Art</button>
+    </div>
+
+    <div class="gallery-grid">
+
+      <div class="gallery-item" data-cat="brand">
+        <img src="assets/logo.png" alt="Atrangi Comedy channel logo and badge design">
+        <span class="gallery-tag">Channel Logo</span>
+      </div>
+
+      <div class="gallery-item" data-cat="video">
+        <img src="https://img.youtube.com/vi/zeJj2nW7g2E/maxresdefault.jpg" onerror="this.src='https://img.youtube.com/vi/zeJj2nW7g2E/hqdefault.jpg'" alt="Video thumbnail sample 1">
+        <span class="gallery-tag">Video #1</span>
+      </div>
+
+      <div class="gallery-item" data-cat="video">
+        <img src="https://img.youtube.com/vi/2zMI77_RHs8/maxresdefault.jpg" onerror="this.src='https://img.youtube.com/vi/2zMI77_RHs8/hqdefault.jpg'" alt="Video thumbnail sample 2">
+        <span class="gallery-tag">Video #2</span>
+      </div>
+
+      <div class="gallery-item" data-cat="video">
+        <img src="https://img.youtube.com/vi/vCWeSn5yHtQ/maxresdefault.jpg" onerror="this.src='https://img.youtube.com/vi/vCWeSn5yHtQ/hqdefault.jpg'" alt="Video thumbnail sample 3">
+        <span class="gallery-tag">Video #3</span>
+      </div>
+
+      <div class="gallery-item" data-cat="video">
+        <img src="https://img.youtube.com/vi/ERzqfc_0uAE/maxresdefault.jpg" onerror="this.src='https://img.youtube.com/vi/ERzqfc_0uAE/hqdefault.jpg'" alt="Video thumbnail sample 4">
+        <span class="gallery-tag">Video #4</span>
+      </div>
+
+      <div class="gallery-item" data-cat="video">
+        <img src="https://img.youtube.com/vi/1aMOtrHrJ8g/maxresdefault.jpg" onerror="this.src='https://img.youtube.com/vi/1aMOtrHrJ8g/hqdefault.jpg'" alt="Video thumbnail sample 5">
+        <span class="gallery-tag">Video #5</span>
+      </div>
+
+      <div class="gallery-item" data-cat="website">
+        <a href="index.html" class="placeholder-card" style="color:#fff;">
+          <i class="fa-solid fa-globe"></i>
+          <span>Ye website hi ek sample hai — 3D animation, multi-page, mobile responsive.</span>
+        </a>
+        <span class="gallery-tag">Website Design</span>
+      </div>
+
+      <div class="gallery-item" data-cat="ai-art">
+        <img src="assets/logo.png" alt="AI generated channel artwork">
+        <span class="gallery-tag">AI Character Art</span>
+      </div>
+
+      <div class="gallery-item" data-cat="ai-art website brand video">
+        <div class="placeholder-card">
+          <i class="fa-solid fa-plus"></i>
+          <span>Aapka project yahan feature ho sakta hai. Contact karo!</span>
+        </div>
+        <span class="gallery-tag">Coming Soon</span>
+      </div>
+
+    </div>
+
+    <div style="text-align:center; margin-top:2.6rem;">
+      <a class="btn btn-primary" href="contact.html">Apna Project Discuss Karo <i class="fa-solid fa-arrow-right"></i></a>
+    </div>
+  </div>
+</section>
+
+<footer id="site-footer"></footer>
+
+<script src="js/main.js"></script>
+<script src="js/footer.js"></script>
+</body>
+</html>
