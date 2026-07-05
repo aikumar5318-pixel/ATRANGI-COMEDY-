@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Contact — Atrangi Comedy</title>
-<meta name="description" content="Get in touch with Atrangi Comedy for thumbnails, videos, website design, portfolios and more.">
+<title>Contact — Atrangi Comedy | Haste Raho, Muskurate Raho</title>
+<meta name="description" content="Get in touch with Atrangi Comedy for thumbnail design, video generation, website design, portfolio making, and AI art services.">
 
 <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16.png">
@@ -12,6 +12,8 @@
 <link rel="icon" type="image/png" sizes="192x192" href="assets/favicon-192.png">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 <link rel="stylesheet" href="css/styles.css">
 </head>
@@ -51,28 +53,28 @@
 
     <div class="contact-info-card">
       <div class="contact-row">
-        <div class="ic"><i class="fa-solid fa-envelope"></i></div>
+        <div class="ic"><i class="fa-solid fa-envelope" aria-hidden="true"></i></div>
         <div>
           <h4>Email</h4>
           <a href="mailto:aikumar.5318@gmail.com">aikumar.5318@gmail.com</a>
         </div>
       </div>
       <div class="contact-row">
-        <div class="ic"><i class="fa-brands fa-youtube"></i></div>
+        <div class="ic"><i class="fa-brands fa-youtube" aria-hidden="true"></i></div>
         <div>
           <h4>YouTube</h4>
           <a href="https://www.youtube.com/@Atrangi-Comedy_1" target="_blank" rel="noopener">@Atrangi-Comedy_1</a>
         </div>
       </div>
       <div class="contact-row">
-        <div class="ic"><i class="fa-brands fa-instagram"></i></div>
+        <div class="ic"><i class="fa-brands fa-instagram" aria-hidden="true"></i></div>
         <div>
           <h4>Instagram</h4>
           <a href="https://www.instagram.com/atrangi_comedy_1" target="_blank" rel="noopener">@atrangi_comedy_1</a>
         </div>
       </div>
       <div class="contact-row">
-        <div class="ic"><i class="fa-solid fa-clock"></i></div>
+        <div class="ic"><i class="fa-solid fa-clock" aria-hidden="true"></i></div>
         <div>
           <h4>Response Time</h4>
           <p>Usually 24-48 hours ke andar reply milta hai.</p>
@@ -80,26 +82,26 @@
       </div>
 
       <div style="margin-top:1.6rem; padding-top:1.4rem; border-top:1px solid var(--border);">
-        <h4 style="font-family:'Baloo 2'; font-size:1.05rem; margin-bottom:.6rem;">Directly Message Karo</h4>
+        <h4 style="font-family:'Baloo 2', sans-serif; font-size:1.05rem; margin-bottom:.6rem;">Directly Message Karo</h4>
         <div style="display:flex; gap:.7rem; flex-wrap:wrap;">
-          <a class="btn btn-sm btn-outline" href="https://www.instagram.com/atrangi_comedy_1" target="_blank" rel="noopener"><i class="fa-brands fa-instagram"></i> Instagram DM</a>
-          <a class="btn btn-sm btn-outline" href="mailto:aikumar.5318@gmail.com"><i class="fa-solid fa-envelope"></i> Email</a>
+          <a class="btn btn-sm btn-outline" href="https://www.instagram.com/atrangi_comedy_1" target="_blank" rel="noopener" aria-label="Send message on Instagram"><i class="fa-brands fa-instagram"></i> Instagram DM</a>
+          <a class="btn btn-sm btn-outline" href="mailto:aikumar.5318@gmail.com" aria-label="Send email"><i class="fa-solid fa-envelope"></i> Email</a>
         </div>
       </div>
     </div>
 
-    <form class="contact-form" action="https://formspree.io/f/mgorkqpk" method="POST">
+    <form class="contact-form" action="https://formspree.io/f/mgorkqpk" method="POST" novalidate>
       <div class="field">
-        <label for="name">Naam</label>
-        <input id="name" name="name" type="text" placeholder="Aapka naam" required>
+        <label for="name">Naam <span style="color:var(--danger);">*</span></label>
+        <input id="name" name="name" type="text" placeholder="Aapka naam" required aria-required="true">
       </div>
       <div class="field">
-        <label for="email">Email</label>
-        <input id="email" name="email" type="email" placeholder="you@example.com" required>
+        <label for="email">Email <span style="color:var(--danger);">*</span></label>
+        <input id="email" name="email" type="email" placeholder="you@example.com" required aria-required="true">
       </div>
       <div class="field">
-        <label for="service">Kis service ke liye contact kar rahe ho?</label>
-        <select id="service" name="service" required>
+        <label for="service">Kis service ke liye contact kar rahe ho? <span style="color:var(--danger);">*</span></label>
+        <select id="service" name="service" required aria-required="true">
           <option value="" disabled selected>Choose a service</option>
           <option value="Thumbnail Design">Thumbnail Design</option>
           <option value="Video Generation">Video Generation</option>
@@ -110,12 +112,13 @@
         </select>
       </div>
       <div class="field">
-        <label for="message">Message</label>
-        <textarea id="message" name="message" placeholder="Apna project batao..." required></textarea>
+        <label for="message">Message <span style="color:var(--danger);">*</span></label>
+        <textarea id="message" name="message" placeholder="Apna project batao..." required aria-required="true"></textarea>
       </div>
       <input type="hidden" name="_subject" value="New enquiry from Atrangi Comedy website">
+      <input type="hidden" name="_captcha" value="false">
       <button type="submit" class="btn btn-primary" style="justify-self:start;"><i class="fa-solid fa-paper-plane"></i> Message Bhejo</button>
-      <p class="form-status" role="status" aria-live="polite"></p>
+      <p class="form-status" role="status" aria-live="polite" aria-atomic="true"></p>
       <p class="form-note">Ye form Formspree se secure taur par connect hai — aapka message seedha inbox mein aayega.</p>
     </form>
 
@@ -126,5 +129,25 @@
 
 <script src="js/main.js"></script>
 <script src="js/footer.js"></script>
+<script>
+// Form submission handler for better UX
+const form = document.querySelector('.contact-form');
+const formStatus = document.querySelector('.form-status');
+
+if (form) {
+  form.addEventListener('submit', function(e) {
+    const statusEl = this.querySelector('.form-status');
+    statusEl.textContent = 'Message bhej rahe hain...';
+    statusEl.style.color = 'var(--muted)';
+  });
+
+  // Handle form response (Formspree redirects on success)
+  window.addEventListener('pageshow', function(event) {
+    if (event.persisted) {
+      formStatus.textContent = '';
+    }
+  });
+}
+</script>
 </body>
 </html>
