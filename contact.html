@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact — Atrangi Comedy</title>
+<meta name="description" content="Get in touch with Atrangi Comedy for thumbnails, videos, website design, portfolios and more.">
+
+<link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16.png">
+<link rel="apple-touch-icon" sizes="180x180" href="assets/favicon-180.png">
+<link rel="icon" type="image/png" sizes="192x192" href="assets/favicon-192.png">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<nav class="site-nav">
+  <div class="nav-inner">
+    <a class="brand" href="index.html">
+      <img src="assets/logo.png" alt="Atrangi Comedy logo">
+      <span>Atrangi Comedy<span class="small">Haste Raho Muskurate Raho</span></span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="videos.html">Videos</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="portfolio.html">Portfolio</a></li>
+      <li><a href="contact.html" class="active">Contact</a></li>
+    </ul>
+    <div class="nav-social">
+      <a class="yt" href="https://www.youtube.com/@Atrangi-Comedy_1" target="_blank" rel="noopener" aria-label="YouTube channel"><i class="fa-brands fa-youtube"></i></a>
+      <a class="ig" href="https://www.instagram.com/atrangi_comedy_1" target="_blank" rel="noopener" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">&#9776;</button>
+    </div>
+  </div>
+</nav>
+
+<div class="page-hero">
+  <div class="container">
+    <span class="eyebrow">💬 Let's Talk</span>
+    <h1>Chaliye <span class="gradient-text">Kaam Shuru Karein</span></h1>
+    <p>Thumbnail, video, website, portfolio ya AI art — jo bhi chahiye, form bharo ya seedha message karo.</p>
+  </div>
+</div>
+
+<section>
+  <div class="container contact-grid">
+
+    <div class="contact-info-card">
+      <div class="contact-row">
+        <div class="ic"><i class="fa-solid fa-envelope"></i></div>
+        <div>
+          <h4>Email</h4>
+          <a href="mailto:aikumar.5318@gmail.com">aikumar.5318@gmail.com</a>
+        </div>
+      </div>
+      <div class="contact-row">
+        <div class="ic"><i class="fa-brands fa-youtube"></i></div>
+        <div>
+          <h4>YouTube</h4>
+          <a href="https://www.youtube.com/@Atrangi-Comedy_1" target="_blank" rel="noopener">@Atrangi-Comedy_1</a>
+        </div>
+      </div>
+      <div class="contact-row">
+        <div class="ic"><i class="fa-brands fa-instagram"></i></div>
+        <div>
+          <h4>Instagram</h4>
+          <a href="https://www.instagram.com/atrangi_comedy_1" target="_blank" rel="noopener">@atrangi_comedy_1</a>
+        </div>
+      </div>
+      <div class="contact-row">
+        <div class="ic"><i class="fa-solid fa-clock"></i></div>
+        <div>
+          <h4>Response Time</h4>
+          <p>Usually 24-48 hours ke andar reply milta hai.</p>
+        </div>
+      </div>
+
+      <div style="margin-top:1.6rem; padding-top:1.4rem; border-top:1px solid var(--border);">
+        <h4 style="font-family:'Baloo 2'; font-size:1.05rem; margin-bottom:.6rem;">Directly Message Karo</h4>
+        <div style="display:flex; gap:.7rem; flex-wrap:wrap;">
+          <a class="btn btn-sm btn-outline" href="https://www.instagram.com/atrangi_comedy_1" target="_blank" rel="noopener"><i class="fa-brands fa-instagram"></i> Instagram DM</a>
+          <a class="btn btn-sm btn-outline" href="mailto:aikumar.5318@gmail.com"><i class="fa-solid fa-envelope"></i> Email</a>
+        </div>
+      </div>
+    </div>
+
+    <form class="contact-form" action="https://formspree.io/f/mgorkqpk" method="POST">
+      <div class="field">
+        <label for="name">Naam</label>
+        <input id="name" name="name" type="text" placeholder="Aapka naam" required>
+      </div>
+      <div class="field">
+        <label for="email">Email</label>
+        <input id="email" name="email" type="email" placeholder="you@example.com" required>
+      </div>
+      <div class="field">
+        <label for="service">Kis service ke liye contact kar rahe ho?</label>
+        <select id="service" name="service" required>
+          <option value="" disabled selected>Choose a service</option>
+          <option value="Thumbnail Design">Thumbnail Design</option>
+          <option value="Video Generation">Video Generation</option>
+          <option value="Website Design">Website Design</option>
+          <option value="Portfolio Making">Portfolio Making</option>
+          <option value="AI Image Generation">AI Image Generation</option>
+          <option value="Something else">Kuch aur</option>
+        </select>
+      </div>
+      <div class="field">
+        <label for="message">Message</label>
+        <textarea id="message" name="message" placeholder="Apna project batao..." required></textarea>
+      </div>
+      <input type="hidden" name="_subject" value="New enquiry from Atrangi Comedy website">
+      <button type="submit" class="btn btn-primary" style="justify-self:start;"><i class="fa-solid fa-paper-plane"></i> Message Bhejo</button>
+      <p class="form-status" role="status" aria-live="polite"></p>
+      <p class="form-note">Ye form Formspree se secure taur par connect hai — aapka message seedha inbox mein aayega.</p>
+    </form>
+
+  </div>
+</section>
+
+<footer id="site-footer"></footer>
+
+<script src="js/main.js"></script>
+<script src="js/footer.js"></script>
+</body>
+</html>
